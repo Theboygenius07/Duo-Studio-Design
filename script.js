@@ -73,12 +73,14 @@ const getTrailerClass = type => {
 
 init();gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".page1 h1,.page1 h2", {
-    y: 10,
+gsap.from(".tdv h1,.tdv h2", {
+    y: 30,
     rotate: 10,
     opacity: 0,
     delay: 0.3,
-    duration: 0.7
+    duration: 0.8,
+    scale: 1.5,
+   
 })
 
 var textTl = gsap.timeline({
@@ -144,7 +146,7 @@ var tl2 = gsap.timeline({
 });
 
 tl2.to(".main, .page2", {
-  backgroundColor: "#fff",
+  backgroundColor: "white",
   color: "#000",
 });
 
@@ -159,7 +161,7 @@ var tl3 = gsap.timeline({
 });
 
 tl3.to(".main", {
-  backgroundColor: "#0F0D0D",
+  backgroundColor: "black",
   color: "#000",
 });
 
@@ -200,4 +202,5 @@ var turnText = gsap.timeline({
 turnText.from(".text-div h1",{
   y: -20,
   color: "#000",
+opacity: 0,
 })

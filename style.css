@@ -110,10 +110,30 @@ html, body {
     mix-blend-mode: difference;
     z-index:102;
 }
-#nav img{
-    height: 23px;
-    width: 47px;
+.nav-text-div{
+    height: 38px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px 0;
 }
+.nav-text-div h1{
+    font-size: 2vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+.nav-text-div:hover h1{
+    transform: translateY(-120%);
+    color: #EDBFFF;
+}
+/* .nav-text-div:hover h1{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+} */
+
 
 #nav-part2{
     display: flex;
@@ -155,19 +175,22 @@ html, body {
     font-weight: 100;
     font-size: 1.18vw;
 }
-/* .tdv{
-    border: 3px solid red;
+.tdv{
+    /* border: 3px solid red; */
     overflow-y: hidden;
     width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    /* position: fixed; */
     
-} */
+}
 .page1 h1 {
     font-size: 7.4vw;
     font-weight: 400;
     font-family: 'PP mori'; /* Make sure the font name is wrapped in quotes */
     filter: blur(0);
     /* margin-left: 6vw; */
-    transform-origin: left;
+    /* transform-origin: left; */
     align-items: center;
     letter-spacing: -6px;
     will-change: transform;
@@ -264,8 +287,10 @@ line-height: 20px;
 }
 .page2-cta{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: ; */
     color: #000;
+    /* flex-direction: column; */
+    
     
 }
 
